@@ -1,0 +1,14 @@
+node_modules/
+node_modules_old_*/
+.env
+.env.*
+auth/
+database/*.json
+!database/*.example.json
+*.log
+*.tmp
+*.zip
+.DS_Store
+Thumbs.db
+
+osesjosgyyqs 8.json
