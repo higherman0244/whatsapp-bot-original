@@ -456,19 +456,7 @@ async function startBot(accountId) {
           );
           if (msg.key.fromMe && !isSelfCommand) continue;
 
-sock.ev.on("connection.update", async (update) => {
-    const { qr } = update;
-
-    if (qr) {
-        console.log("Scan this QR:");
-
-        qrcode.toDataURL(qr, (err, url) => {
-            console.log(url);
-        });
-    }
-});
-
-          const senderJid = resolveSenderJid(sock, msg);
+         const senderJid = resolveSenderJid(sock, msg);
           updateUserProfile(senderJid);
 
           const hasViewOnce =
